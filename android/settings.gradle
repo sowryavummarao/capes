@@ -1,0 +1,3 @@
+rootProject.name = 'capes'
+
+include ':app'
