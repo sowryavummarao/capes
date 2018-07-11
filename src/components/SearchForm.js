@@ -77,4 +77,15 @@ const styles = {
   }
 };
 
-export default SearchForm;
+const mapStateToProps = state => {
+  return {
+    name: state.auth.name,
+    course: state.auth.course,
+  };
+};
+
+export default connect(mapStateToProps, {
+  nameChanged,
+  courseChanged,
+  loginUser
+})(LoginForm);
